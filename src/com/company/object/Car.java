@@ -10,7 +10,8 @@ public class Car {
         this.productionYear = productionYear;
         this.model = model;
         this.mark = mark;
-        this.engine = engine;
+        Engine cloneEngine = new Engine(engine.getHorsePower(), engine.getWeight(), engine.getMillage());
+        this.engine = cloneEngine;
     }
 
     public int getProductionYear() {

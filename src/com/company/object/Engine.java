@@ -16,7 +16,7 @@ public class Engine {
     }
 
     public void setHorsePower(int horsePower) {
-       new Engine(horsePower, this.weight, this.millage);
+        this.horsePower = horsePower;
     }
 
     public double getWeight() {
@@ -24,7 +24,7 @@ public class Engine {
     }
 
     public void setWeight(double weight) {
-        new Engine(this.horsePower, weight, this.millage);
+        this.weight = weight;
     }
 
     public double getMillage() {
@@ -32,6 +32,6 @@ public class Engine {
     }
 
     public void setMillage(double millage) {
-        new Engine(this.horsePower, this.weight, millage);
+        this.millage = millage;
     }
 }
